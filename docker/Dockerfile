@@ -3,7 +3,7 @@ FROM python:3.7
 
 # イメージのメタデータ
 LABEL version="1.0"
-LABEL maintainer="Yuto Chikazawa <minet6759.azalee17@gmail.com>"
+LABEL maintainer="Yuto Chikazawa <minet6759@gmail.com>"
 LABEL description="This is a python-docker-sample."
 
 # RUN: docker buildするときに実行される
