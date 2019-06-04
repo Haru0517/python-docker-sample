@@ -18,9 +18,10 @@ RUN apt-get update && \
 
 WORKDIR /usr/src
 
+ENV PIPENV_VENV_IN_PROJECT=1
+
 COPY ./Pipfile ./
-COPY ./Pipfile.lock ./
 
 RUN pip install --upgrade pip
 RUN pip install pipenv
-RUN pipenv install --system --dev
+RUN pipenv install --skip-lock --system --dev
